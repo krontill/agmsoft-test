@@ -1,0 +1,27 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+.page {
+    background: @bg;
+    display: flex;
+    flex-direction: column;
+    min-width: 884px;
+    height: 100vh;
+    &__wrapper {
+        display: flex;
+        overflow: hidden;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1836px; //1920 - 80px(.vertical-menu) - 4px(.element)
+    }
+    &__columns {
+        display: flex;
+        overflow: auto;
+    }
+}

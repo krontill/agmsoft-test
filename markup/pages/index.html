@@ -1,0 +1,26 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+
+        <div class="page__wrapper">
+            {{> vertical-menu/vertical-menu}}
+            <div class="page__content">
+                {{> header/header}}
+                <div class="page__columns">
+                    {{> column/column column.left}}
+                    {{> column/column column.center}}
+                    {{> column/column column.right}}
+                </div>
+            </div>
+            {{> element/element}}
+        </div>
+        {{> footer/footer}}
+
+    </body>
+
+</html>

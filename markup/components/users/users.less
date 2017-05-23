@@ -1,0 +1,31 @@
+.users {
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: calc(~"100vh - 184px"); //2 footer + 2 header + user top = 184
+        overflow-y: auto;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 13px 20px 12px;
+        &:not(:last-child) {
+            border-bottom: 1px solid @users-border;
+        }
+    }
+    &__avatar {
+        width: 38px;
+        height: 38px;
+        margin: 0 20px 0 0;
+        border-radius: 100%;
+        background: @avatar;
+        flex-shrink: 0;
+    }
+    &__name {
+        font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.7);
+        line-height: 19px;
+    }
+}
